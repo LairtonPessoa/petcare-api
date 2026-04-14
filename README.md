@@ -1,21 +1,30 @@
 # PetCare - API
 
-PetCare - Sistema de Acompanhamento de Saúde para Pets!
+Sistema de Acompanhamento de Saúde para Pets.
+Esta é a API (Backend) da aplicação.
 
-Essa é a API que facilita o seu cuidado com o seu PET =)
+## Pré-requisitos
 
-## Como começar?
+- Node.js (v18 ou superior)
+- Docker e Docker Compose
 
-1. Clone o projeto para sua máquina
+## Como rodar o projeto localmente
 
-```bash
-git clone https://github.com/petcare-es/petcare-api
-```
+1. Clone o repositório:
+`git clone https://github.com/LairtonPessoa/petcare-api.git`
+`cd petcare-api`
 
-2. Na raiz do projeto, crie um arquivo chamado `.env`. Use o arquivo `.env.example` como base. 
+2. Instale as dependências locais:
+`npm install`
 
-3. Levante os containers
+3. Configure as variáveis de ambiente:
+Crie um arquivo `.env` na raiz do projeto usando o arquivo `.env.example` como base.
+`cp .env.example .env`
 
-```bash
-docker compose up -d
-```
+4. Suba os containers do banco de dados e da API:
+`docker compose up -d --build`
+
+5. Execute as migrations do banco de dados:
+`npx prisma migrate dev`
+
+A API estará rodando na porta 3001.

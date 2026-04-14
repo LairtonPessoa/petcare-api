@@ -1,4 +1,4 @@
-FROM node:20.17.0
+FROM node:20
 
 WORKDIR /usr/app
 
@@ -8,6 +8,6 @@ RUN npm install
 
 COPY . .
 
-EXPOSE 3000
+RUN npx prisma generate
 
-CMD npm run dev
+CMD ["npm", "run", "dev"]

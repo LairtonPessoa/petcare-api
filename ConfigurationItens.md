@@ -52,3 +52,14 @@
 - **Commit ID**: b944e68
 - **Mudanças**: Estabelecimento da baseline da documentação técnica com diretrizes de execução e requisitos de ambiente
 - **Data Release**: 15/04/2026
+
+# Item de Configuração: Definição de Rotas do Backend (API)
+
+- **ID**: IC-009
+- **Tipo**: Código-fonte
+- **Versão**: 1.0.0
+- **Repositório**: https://github.com/LairtonPessoa/petcare-api/blob/main/src/routes/index.ts
+- **Branch**: main
+- **Commit ID**: b944e68
+- **Mudanças**: Centralização e orquestração das rotas da API, integrando os módulos de usuários, pets, vacinas, agendamentos e os diários de acompanhamento (humor, alimentação e peso) à baseline do projeto.
+- **Data Release**: 15/04/2025

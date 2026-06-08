@@ -9,7 +9,7 @@ export enum MeasurementUnits {
 
 type FoodDiaryType = {
 
-    amout: number;
+    amount: number;
     unit: MeasurementUnits;
     petId: string;
     date: Date;

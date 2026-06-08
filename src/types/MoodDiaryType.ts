@@ -4,7 +4,7 @@ export enum Mood {
     NERVOSO   = "NERVOSO",
     FELIZ     = "FELIZ",
     CANSADO   = "CANSADO",
-    ANCIOSO   = "ANCIOSO",
+    ANSIOSO   = "ANSIOSO",
     CARINHOSO = "CARINHOSO",
     TRISTE    = "TRISTE"
 }

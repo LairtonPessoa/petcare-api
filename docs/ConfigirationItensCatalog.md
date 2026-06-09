@@ -2,7 +2,7 @@
 
 **Projeto:** PetCare (Sistema de Gerenciamento Veterinário)  
 **Versão:** v1.0.0  
-**Data:** 15/04/2026
+**Data:** 09/06/2026
 
 ## Itens de Configuração Mapeados
 
@@ -10,7 +10,7 @@
   - **Descrição**: Código-fonte do Backend (API Node.js)
   - **Repositório**: [LairtonPessoa/petcare-api](https://github.com/LairtonPessoa/petcare-api)
   - **Branch padrão**: `main`
-  - **Tags**: `v1.0.0`
+  - **Tags**: `v1.0.1`
 
 - **ID**: IC-002
   - **Descrição**: Código-fonte do Frontend (Aplicação Web Next.js)
@@ -21,7 +21,7 @@
 - **ID**: IC-003
   - **Descrição**: Schema do Banco de Dados (Prisma ORM)
   - **Repositório**: [prisma/schema.prisma](https://github.com/LairtonPessoa/petcare-api/blob/main/prisma/schema.prisma) (Repositório Backend)
-  - **Tags**: `v1.0.0`
+  - **Tags**: `v1.0.1`
 
 - **ID**: IC-004
   - **Descrição**: Orquestração de Containers (Docker Compose)
@@ -31,7 +31,7 @@
 - **ID**: IC-005
   - **Descrição**: Gerenciamento de Dependências (Backend)
   - **Repositório**: [package.json](https://github.com/LairtonPessoa/petcare-api/blob/main/package.json) (Repositório Backend)
-  - **Tags**: `v1.0.0`
+  - **Tags**: `v1.0.1`
 
 - **ID**: IC-006
   - **Descrição**: Gerenciamento de Dependências (Frontend)
@@ -58,5 +58,5 @@
 
 - **Marcação de Versões (Tags)**:
   ```bash
-  git tag -a v1.0.0 -m "Release: Estabelecimento da baseline inicial do projeto PetCare"
+  git tag -a v1.0.1 -m "Patch: Correção ortográfica no banco e inclusão de middleware CORS"
   git push origin --tags

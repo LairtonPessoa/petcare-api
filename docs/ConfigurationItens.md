@@ -2,23 +2,23 @@
 
 - **ID**: IC-001
 - **Tipo**: Código-fonte
-- **Versão**: 1.0.0
+- **Versão**: 1.0.1
 - **Repositório**: https://github.com/LairtonPessoa/petcare-api
 - **Branch**: develop
-- **Commit ID**: b944e68
-- **Mudanças**: Estabelecimento da baseline do projeto legado PetCare e atualização das configurações de ambiente para a nova disciplina
-- **Data Release**: 15/04/2026
+- **Commit ID**: 3fdd342
+- **Mudanças**: Inclusão do middleware de segurança CORS no entrypoint da aplicação (src/index.ts) para permitir requisições cross-origin
+- **Data Release**: 09/06/2026
 
 # Item de Configuração: Schema do Banco de Dados (Prisma)
 
 - **ID**: IC-003
 - **Tipo**: Configuração
-- **Versão**: 1.0.0
+- **Versão**: 1.0.1
 - **Repositório**: https://github.com/LairtonPessoa/petcare-api/blob/develop/prisma/schema.prisma
 - **Branch**: develop
-- **Commit ID**: b944e68
-- **Mudanças**: Definição da baseline do schema de dados contemplando as entidades base (User, Pet, Vaccine, Appointment) e diários de acompanhamento
-- **Data Release**: 15/04/2026
+- **Commit ID**: 3fdd342
+- **Mudanças**: Correção ortográfica no enum Mood (ANSIOSO) e na propriedade de quantidade do FoodDiary (amount) para alinhar tipagens
+- **Data Release**: 09/06/2026
 
 # Item de Configuração: Docker Compose
 
@@ -35,12 +35,12 @@
 
 - **ID**: IC-005
 - **Tipo**: Configuração
-- **Versão**: 1.0.0
+- **Versão**: 1.0.1
 - **Repositório**: https://github.com/LairtonPessoa/petcare-api/blob/develop/package.json
 - **Branch**: develop
-- **Commit ID**: b944e68
-- **Mudanças**: Estabelecimento da baseline das dependências do backend, homologando e congelando as versões do Prisma e framework HTTP
-- **Data Release**: 15/04/2026
+- **Commit ID**: 3fdd342
+- **Mudanças**: Inclusão das bibliotecas cors e @types/cors para viabilizar a comunicação e o envio de requisições do front-end
+- **Data Release**: 09/06/2026
 
 # Item de Configuração: Documentação Técnica do Backend (API)
 
@@ -62,4 +62,4 @@
 - **Branch**: develop
 - **Commit ID**: b944e68
 - **Mudanças**: Centralização e orquestração das rotas da API, integrando os módulos de usuários, pets, vacinas, agendamentos e os diários de acompanhamento (humor, alimentação e peso) à baseline do projeto.
-- **Data Release**: 15/04/2025
+- **Data Release**: 15/04/2026

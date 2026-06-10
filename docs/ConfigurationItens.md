@@ -2,11 +2,11 @@
 
 - **ID**: IC-001
 - **Tipo**: Código-fonte
-- **Versão**: 1.0.1
+- **Versão**: 1.0.2
 - **Repositório**: https://github.com/LairtonPessoa/petcare-api
 - **Branch**: develop
 - **Commit ID**: 3fdd342
-- **Mudanças**: Inclusão do middleware de segurança CORS no entrypoint da aplicação (src/index.ts) para permitir requisições cross-origin
+- **Mudanças**: Criação da estrutura de automação de Integração Contínua com GitHub Actions (.github/workflows/ci.yml) para validação de testes na API.
 - **Data Release**: 09/06/2026
 
 # Item de Configuração: Schema do Banco de Dados (Prisma)

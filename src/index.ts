@@ -18,7 +18,7 @@ app.get("/hi", (resquest, response) => {
     });
 });
 
-app.listen(env.SERVER_PORT, () => {
-    console.log(`Server is running on port ${env.SERVER_PORT} 🚀`);
+app.listen(3001, () => {
+    console.log(`Server is running on port 3001 🚀`);
 });
   

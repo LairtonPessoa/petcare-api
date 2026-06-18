@@ -7,7 +7,7 @@ async function main() {
     where: { email: 'teste@petcare.com' },
     update: {},
     create: {
-      id: '12345678-1234-1234-1234-123456789012', // ID fixo que usaremos no Controller
+      id: '12345678-1234-1234-1234-123456789012',
       name: 'Usuário Teste',
       email: 'teste@petcare.com',
       password: 'senha-criptografada-fake',

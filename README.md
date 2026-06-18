@@ -21,6 +21,6 @@ Na raiz do projeto, faça uma cópia do arquivo `.env.example` e renomeie essa c
 
 4. Suba a infraestrutura:
 Execute o comando abaixo no terminal para construir as imagens e iniciar os contêineres.
-`docker compose up --build`
+`docker compose up -d --build`
 
 O script de inicialização executará as migrações e o povoamento do banco de dados automaticamente. A API estará rodando e pronta para receber requisições na porta 3001.

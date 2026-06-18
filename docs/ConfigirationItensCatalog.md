@@ -1,8 +1,8 @@
 # Catálogo de Itens de Configuração (ICs) - Projeto PetCare
 
 **Projeto:** PetCare (Sistema de Gerenciamento Veterinário)  
-**Versão:** v1.0.2  
-**Data:** 09/06/2026
+**Versão:** v1.0.3  
+**Data:** 18/06/2026
 
 ## Itens de Configuração Mapeados
 
@@ -10,7 +10,7 @@
   - **Descrição**: Código-fonte do Backend (API Node.js)
   - **Repositório**: [LairtonPessoa/petcare-api](https://github.com/LairtonPessoa/petcare-api)
   - **Branch padrão**: `main`
-  - **Tags**: `v1.0.2`
+  - **Tags**: `v1.0.3`
 
 - **ID**: IC-002
   - **Descrição**: Código-fonte do Frontend (Aplicação Web Next.js)
@@ -31,14 +31,14 @@
 - **ID**: IC-005
   - **Descrição**: Gerenciamento de Dependências (Backend)
   - **Repositório**: [package.json](https://github.com/LairtonPessoa/petcare-api/blob/main/package.json) (Repositório Backend)
-  - **Tags**: `v1.0.1`
+  - **Tags**: `v1.0.2`
 
 - **ID**: IC-006
   - **Descrição**: Gerenciamento de Dependências (Frontend)
   - **Repositório**: [package.json](https://github.com/LaisaMireli/petcare-web/blob/main/package.json) (Repositório Frontend)
   - **Tags**: `v1.0.0`
 
-**ID**: IC-007
+- **ID**: IC-007
   - **Descrição**: Documentação Técnica (README)
   - **Repositório**: [README.md](https://github.com/LaisaMireli/petcare-web/blob/main/README.md) (Repositório Frontend)
   - **Tags**: `v1.0.0`
@@ -46,17 +46,9 @@
 - **ID**: IC-008
   - **Descrição**: Documentação Técnica (README)
   - **Repositório**: [README.md](https://github.com/LairtonPessoa/petcare-api/blob/main/README.md) (Repositório Backend)
-  - **Tags**: `v1.0.0`
+  - **Tags**: `v1.0.1`
 
 - **ID**: IC-009
   - **Descrição**: Definição de Rotas da API
   - **Repositório**: [Código-fonte das rotas](https://github.com/LairtonPessoa/petcare-api/blob/main/src/routes/index.ts) (Repositório Backend)
   - **Tags**: `v1.0.0`
-
-## Controle de Mudanças via Git
-
-
-- **Marcação de Versões (Tags)**:
-  ```bash
-  git tag -a v1.0.2 -m "Patch: Adicao do pipeline de CI/CD com GitHub Actions"
-  git push origin --tags

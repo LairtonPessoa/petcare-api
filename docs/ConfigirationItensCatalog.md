@@ -16,7 +16,7 @@
   - **Descrição**: Código-fonte do Frontend (Aplicação Web Next.js)
   - **Repositório**: [LaisaMireli/petcare-web](https://github.com/LaisaMireli/petcare-web)
   - **Branch padrão**: `main`
-  - **Tags**: `v1.0.0`
+  - **Tags**: `v1.2.0`
 
 - **ID**: IC-003
   - **Descrição**: Schema do Banco de Dados (Prisma ORM)
@@ -41,7 +41,7 @@
 - **ID**: IC-007
   - **Descrição**: Documentação Técnica (README)
   - **Repositório**: [README.md](https://github.com/LaisaMireli/petcare-web/blob/main/README.md) (Repositório Frontend)
-  - **Tags**: `v1.0.0`
+  - **Tags**: `v1.2.0`
 
 - **ID**: IC-008
   - **Descrição**: Documentação Técnica (README)

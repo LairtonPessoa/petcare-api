@@ -4,7 +4,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "npm run prisma && npx tsx watch src/index.ts",
-    "prisma": "npx prisma generate && npx prisma migrate deploy",
+    "prisma": "npx prisma generate && npx prisma migrate deploy && npx prisma db seed",
     "container": "docker compose up",
     "getInContainer": "docker compose exec -it petcare_api /bin/bash",
     "test": "vitest run",

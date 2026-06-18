@@ -6,7 +6,8 @@ import PetService from "service/PetService";
 
 export default class PetController {
     public async register(req: Request, res: Response) {
-        const ownerId = req.user.id;
+        // const ownerId = req.user.id;
+        const ownerId = "12345678-1234-1234-1234-123456789012";
         const { name } = registerPetSchema.parse(req.body);
 
         const createService = new PetService(

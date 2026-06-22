@@ -1,8 +1,8 @@
 # Catálogo de Itens de Configuração (ICs) - Projeto PetCare
 
 **Projeto:** PetCare (Sistema de Gerenciamento Veterinário)  
-**Versão:** v1.0.3  
-**Data:** 18/06/2026
+**Versão:** v1.1.0 
+**Data:** 22/06/2026
 
 ## Itens de Configuração Mapeados
 
@@ -10,7 +10,7 @@
   - **Descrição**: Código-fonte do Backend (API Node.js)
   - **Repositório**: [LairtonPessoa/petcare-api](https://github.com/LairtonPessoa/petcare-api)
   - **Branch padrão**: `main`
-  - **Tags**: `v1.0.3`
+  - **Tags**: `v1.1.0`
 
 - **ID**: IC-002
   - **Descrição**: Código-fonte do Frontend (Aplicação Web Next.js)

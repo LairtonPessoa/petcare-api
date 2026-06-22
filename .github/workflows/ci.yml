@@ -1,0 +1,29 @@
+name: CI/CD PetCare API
+
+on:
+  push:
+    branches: [ "main", "develop" ]
+  pull_request:
+    branches: [ "main", "develop" ]
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout do repositório
+      uses: actions/checkout@v4
+
+    - name: Configurar Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '20'
+
+    - name: Instalar dependências da API
+      run: npm install
+
+    - name: Gerar o cliente do Prisma
+      run: npx prisma generate
+
+    - name: Executar bateria de testes unitários
+      run: npm test

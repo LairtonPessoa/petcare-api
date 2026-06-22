@@ -6,25 +6,21 @@ Esta é a API (Backend) da aplicação.
 ## Pré-requisitos
 
 - Node.js (v18 ou superior)
-- Docker e Docker Compose
+- Certifique-se de ter o Docker e o Docker Compose (ou Docker Desktop) instalados e rodando em sua máquina.
 
 ## Como rodar o projeto localmente
 
 1. Clone o repositório:
 `git clone https://github.com/LairtonPessoa/petcare-api.git`
+
+2. Acesse a pasta do projeto:
 `cd petcare-api`
 
-2. Instale as dependências locais:
-`npm install`
-
 3. Configure as variáveis de ambiente:
-Crie um arquivo `.env` na raiz do projeto usando o arquivo `.env.example` como base.
-`cp .env.example .env`
+Na raiz do projeto, faça uma cópia do arquivo `.env.example` e renomeie essa cópia para `.env`. Abra este novo arquivo e substitua os valores genéricos por suas próprias credenciais. É fundamental não deixar espaços em branco após o sinal de igual. Mantenha a variável `DB_HOST` e `DB_PORT` com o valor `petcare_db` e `5432`, pois elas garantem a comunicação interna da infraestrutura.
 
-4. Suba os containers do banco de dados e da API:
+4. Suba a infraestrutura:
+Execute o comando abaixo no terminal para construir as imagens e iniciar os contêineres.
 `docker compose up -d --build`
 
-5. Execute as migrations do banco de dados:
-`npx prisma migrate dev`
-
-A API estará rodando na porta 3001.
+O script de inicialização executará as migrações e o povoamento do banco de dados automaticamente. A API estará rodando e pronta para receber requisições na porta 3001.

@@ -6,7 +6,8 @@ import PetService from "service/PetService";
 
 export default class PetController {
     public async register(req: Request, res: Response) {
-        const ownerId = req.user.id;
+        // const ownerId = req.user.id;
+        const ownerId = "12345678-1234-1234-1234-123456789012";
         const { name } = registerPetSchema.parse(req.body);
 
         const createService = new PetService(
@@ -14,8 +15,8 @@ export default class PetController {
             new UserPrismaRepository()
         )
 
-        const {pet} = await createService.create({
-            name, 
+        const { pet } = await createService.create({
+            name,
             ownerId
         });
 
@@ -23,15 +24,16 @@ export default class PetController {
 
     }
 
-    public async findByOwner(req: Request, res: Response){
-        const ownerId = req.user.id;
+    public async findByOwner(req: Request, res: Response) {
+        // const ownerId = req.user.id;
+        const ownerId = "12345678-1234-1234-1234-123456789012";
 
         const findPetService = new PetService(
             new PetPrismaRepository(),
             new UserPrismaRepository(),
         );
 
-        const { pets } = await findPetService.findByOwner({ownerId});
+        const { pets } = await findPetService.findByOwner({ ownerId });
 
         res.status(200).json(pets);
     }

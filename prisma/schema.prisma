@@ -61,7 +61,7 @@ enum Mood {
   NERVOSO
   FELIZ
   CANSADO
-  ANCIOSO
+  ANSIOSO
   CARINHOSO
   TRISTE
 
@@ -112,7 +112,7 @@ enum MeasurementUnits {
 
 model FoodDiary {
   id                String            @id @default(uuid())
-  amout             Int
+  amount             Int
   unit              MeasurementUnits
   petId             String
   date              DateTime        
